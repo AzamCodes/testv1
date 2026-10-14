@@ -1,0 +1,783 @@
+﻿@media (max-width: 900px) {
+  .section {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .header {
+    padding: 0 2%;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+
+  .nav>a {
+    font-size: 10px;
+  }
+
+  .brand {
+    font-size: 11px;
+  }
+
+  .brand img {
+    width: 37px;
+    height: 37px;
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 18px;
+  }
+
+  .portrait {
+    height: 290px;
+  }
+
+  .intro-grid {
+    gap: 5%;
+  }
+
+  .mission-glass {
+    grid-template-columns: 70px 1fr 1fr;
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .updates-grid {
+    gap: 7%;
+  }
+
+  .gallery-grid {
+    grid-template-rows: 210px 170px;
+  }
+}
+
+@media (max-width: 680px) {
+  .header {
+    height: 70px;
+    top: 36px;
+    padding: 0 2%;
+    background: linear-gradient(180deg, rgba(20, 28, 22, 0.18), transparent);
+  }
+
+  .menu-toggle {
+    display: flex;
+    width: 43px;
+    height: 43px;
+    border: 1px solid #ffffff70;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    z-index: 12;
+  }
+
+  .menu-toggle span {
+    width: 15px;
+    height: 1px;
+    background: white;
+    transition: transform 0.25s;
+  }
+
+  .menu-toggle[aria-expanded="true"] span:first-child {
+    transform: translateY(3px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded="true"] span:last-child {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+  .nav {
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: min(86vw, 380px);
+    padding: 125px 34px 40px;
+    background: rgba(37, 41, 35, 0.96);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    transform: translateX(102%);
+    transition: transform 0.42s cubic-bezier(0.7, 0, 0.2, 1);
+    box-shadow: -20px 0 60px #10140f38;
+  }
+
+  .nav.open {
+    transform: translateX(0);
+  }
+
+  .nav>a {
+    font: 500 25px var(--serif);
+    padding: 14px 0;
+    border-bottom: 1px solid #ffffff24;
+  }
+
+  .nav .login-open {
+    margin-top: 25px;
+    width: max-content;
+  }
+
+  .hero {
+    min-height: 690px;
+    height: 100svh;
+  }
+
+  .hero-photo {
+    background-position: 58% center;
+  }
+
+  .hero-inner {
+    left: 7%;
+    right: 6%;
+    top: 30%;
+  }
+
+  .hero h1 {
+    font-size: clamp(58px, 13vw, 88px);
+  }
+
+  .hero-bottom {
+    width: 100%;
+    margin-top: 34px;
+  }
+
+  .hero-bottom p {
+    font-size: 10px;
+  }
+
+  .hero-index {
+    left: 7%;
+    bottom: 24px;
+  }
+
+  .hero-label {
+    right: 7%;
+    bottom: 24px;
+  }
+
+  .hero-index span {
+    display: none;
+  }
+
+  .section {
+    padding: 78px 7%;
+  }
+
+  .section-top {
+    font-size: 7px;
+  }
+
+  .section-top span:last-child {
+    text-align: right;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 42px 0;
+  }
+
+  .intro h2,
+  .section-title h2,
+  .updates h2,
+  .gallery-heading h2,
+  .contact h2 {
+    font-size: clamp(42px, 11vw, 60px);
+  }
+
+  .intro-copy {
+    max-width: 450px;
+  }
+
+  .mission-glass {
+    grid-template-columns: 55px 1fr;
+    gap: 16px;
+    padding: 22px;
+    min-height: 0;
+  }
+
+  .seal {
+    width: 52px;
+    height: 52px;
+  }
+
+  .seal img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .mission-glass h3 {
+    font-size: 19px;
+  }
+
+  .mission-glass>p {
+    grid-column: 2;
+    font-size: 10px;
+  }
+
+  .section-title,
+  .gallery-heading {
+    display: block;
+    padding: 40px 0 26px;
+  }
+
+  .section-title p,
+  .gallery-heading p {
+    margin: 17px 0 0;
+  }
+
+  .course {
+    grid-template-columns: 27px 1fr 37px;
+    gap: 10px;
+    padding: 20px 2px;
+  }
+
+  .course h3 {
+    font-size: 19px;
+  }
+
+  .course>strong {
+    display: none;
+  }
+
+  .course button {
+    width: 33px;
+    height: 33px;
+  }
+
+  .people {
+    padding-bottom: 80px;
+  }
+
+  .people-grid {
+    gap: 22px 12px;
+  }
+
+  .portrait {
+    height: clamp(170px, 54vw, 260px);
+  }
+
+  .person h3 {
+    font-size: 16px;
+    margin-top: 11px;
+  }
+
+  .person p {
+    font-size: 9px;
+  }
+
+  .person small {
+    font-size: 7px;
+  }
+
+  .updates-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 40px;
+  }
+
+  .notice-card {
+    min-height: 0;
+    padding: 25px;
+  }
+
+  .note-mark {
+    margin: 25px 0 12px;
+  }
+
+  .notice-card h3 {
+    font-size: 25px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 155px;
+    gap: 9px;
+  }
+
+  .gallery-main {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+
+  .gallery-word>span {
+    font-size: 35px;
+  }
+
+  .gallery-grid figcaption {
+    font-size: 7px;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .gallery-logo img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 40px;
+  }
+
+  .contact-form {
+    padding: 22px;
+  }
+
+  .contact-lead {
+    margin-bottom: 25px;
+  }
+
+  footer {
+    padding: 23px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  footer>span {
+    text-align: right;
+  }
+
+  footer>a:not(.footer-brand) {
+    text-align: right;
+  }
+
+  footer>div {
+    grid-column: span 2;
+  }
+
+  .reveal {
+    transform: translateY(19px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+body {
+  font-size: 16px;
+}
+
+.nav {
+  font-size: 13px;
+}
+
+.nav>a,
+.login-open {
+  font-size: 12px;
+}
+
+.brand {
+  font-size: 15px;
+}
+
+.brand small,
+.footer-brand small {
+  font-size: 10px;
+}
+
+.eyebrow {
+  font-size: 11px;
+}
+
+.hero-bottom p {
+  font-size: 14px;
+}
+
+.hero-index,
+.hero-label {
+  font-size: 10px;
+}
+
+.section-top {
+  font-size: 10px;
+}
+
+.intro-copy {
+  font-size: 15px;
+}
+
+.under-link {
+  font-size: 13px;
+}
+
+.mission-glass span,
+.notice-card>span {
+  font-size: 10px;
+}
+
+.mission-glass h3 {
+  font-size: 25px;
+}
+
+.mission-glass>p {
+  font-size: 13px;
+}
+
+.section-title p,
+.gallery-heading p,
+.muted {
+  font-size: 14px;
+}
+
+.course small,
+.person small {
+  font-size: 10px;
+}
+
+.course h3 {
+  font-size: 27px;
+}
+
+.course p,
+.person p {
+  font-size: 13px;
+}
+
+.course-no {
+  font-size: 11px;
+}
+
+.person h3 {
+  font-size: 22px;
+}
+
+.notice time {
+  font-size: 10px;
+}
+
+.notice h3 {
+  font-size: 19px;
+}
+
+.notice p,
+.notice-card p {
+  font-size: 13px;
+}
+
+.notice-card h3 {
+  font-size: 32px;
+}
+
+.gallery-grid figcaption {
+  font-size: 10px;
+}
+
+.contact-lead {
+  font-size: 14px;
+}
+
+.contact-detail small,
+.contact-form label {
+  font-size: 10px;
+}
+
+.contact-detail p {
+  font-size: 13px;
+}
+
+.contact-form h3 {
+  font-size: 26px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  font-size: 14px;
+}
+
+.submit {
+  font-size: 13px;
+}
+
+.form-note,
+.form-status {
+  font-size: 11px;
+}
+
+footer>span,
+footer>a:not(.footer-brand),
+footer>div {
+  font-size: 10px;
+}
+
+dialog[open] {
+  animation: dialog-in 0.38s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+dialog.is-closing {
+  animation: dialog-out 0.24s ease both;
+}
+
+dialog::backdrop {
+  animation: backdrop-in 0.3s ease both;
+}
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.975);
+    filter: blur(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes dialog-out {
+  to {
+    opacity: 0;
+    transform: translateY(12px) scale(0.985);
+    filter: blur(3px);
+  }
+}
+
+@keyframes backdrop-in {
+  from {
+    background: rgba(17, 17, 17, 0);
+  }
+
+  to {
+    background: rgba(17, 17, 17, 0.6);
+  }
+}
+
+.login-modal {
+  width: min(500px, calc(100% - 32px));
+  padding: 42px clamp(24px, 7vw, 52px);
+  border-radius: 8px;
+}
+
+.login-modal small {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
+
+.login-emblem {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: white;
+  margin: 0 auto 22px;
+  box-shadow: 0 8px 30px #24301a18;
+}
+
+.login-emblem img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.login-modal>small,
+.login-modal>h2,
+.login-modal>p {
+  text-align: center;
+}
+
+.login-modal h2 {
+  font: 500 42px var(--serif);
+  margin: 12px 0;
+}
+
+.login-modal h2 em {
+  color: #849780;
+  font-weight: 500;
+}
+
+.login-modal>p {
+  font-size: 14px;
+  color: #686b64;
+  margin-bottom: 26px;
+}
+
+.login-form label {
+  display: block;
+  font-size: 12px;
+  margin: 17px 0 7px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #aeb5a6;
+  border-radius: 3px;
+  background: #ffffff9c;
+  font-size: 14px;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: #758568;
+  box-shadow: 0 0 0 3px #8fa17e25;
+}
+
+.login-form .submit {
+  margin-top: 22px;
+  padding: 16px;
+}
+
+.login-form .form-note {
+  color: #73776f;
+}
+
+.login-status {
+  font-size: 13px;
+  color: #586f4e;
+  line-height: 1.6;
+  margin: 12px 0 0;
+}
+
+@media (max-width: 680px) {
+  .brand {
+    font-size: 13px;
+  }
+
+  .brand small {
+    font-size: 9px;
+  }
+
+  .nav>a {
+    font-size: 27px;
+  }
+
+  .nav .login-open {
+    font-size: 13px;
+  }
+
+  .hero-bottom p {
+    font-size: 12px;
+  }
+
+  .hero-index,
+  .hero-label {
+    font-size: 8px;
+  }
+
+  .section {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  .section-top {
+    font-size: 8px;
+  }
+
+  .intro-copy {
+    font-size: 14px;
+  }
+
+  .mission-glass h3 {
+    font-size: 22px;
+  }
+
+  .mission-glass>p {
+    font-size: 12px;
+  }
+
+  .section-title p,
+  .gallery-heading p,
+  .muted {
+    font-size: 13px;
+  }
+
+  .course small,
+  .person small {
+    font-size: 9px;
+  }
+
+  .course h3 {
+    font-size: 22px;
+  }
+
+  .course p,
+  .person p {
+    font-size: 11px;
+  }
+
+  .person h3 {
+    font-size: 19px;
+  }
+
+  .notice h3 {
+    font-size: 17px;
+  }
+
+  .notice p,
+  .notice-card p {
+    font-size: 12px;
+  }
+
+  .notice time {
+    font-size: 9px;
+  }
+
+  .notice-card h3 {
+    font-size: 28px;
+  }
+
+  .contact-lead {
+    font-size: 13px;
+  }
+
+  .contact-detail p {
+    font-size: 12px;
+  }
+
+  .contact-form label {
+    font-size: 11px;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .submit {
+    font-size: 12px;
+  }
+
+  .form-note,
+  .form-status {
+    font-size: 10px;
+  }
+
+  footer>span,
+  footer>a:not(.footer-brand),
+  footer>div {
+    font-size: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  dialog[open],
+  dialog::backdrop {
+    animation: none;
+  }
+}
